@@ -1,6 +1,22 @@
 h1 {
   color: MidnightBlue;
+  text-align: center;
+  opacity: 50%;
+  margin-top: 200px;
+
 }
+
+h4 {
+  color: white;
+  text-align: center;
+  opacity: 50%;
+}
+
+
 body {
-  background-color: #D3D3D3;
+  background-image: url('./images/clouds_background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Arial;
 }
