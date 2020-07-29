@@ -12,6 +12,11 @@ h4 {
   opacity: 50%;
 }
 
+h2 {
+  color: Black;
+  text-align: center;
+  opacity: 50%;
+}
 
 body {
   background-image: url('./images/clouds_background.jpg');
