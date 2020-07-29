@@ -77,6 +77,16 @@ body {
   padding: 10px 50px 10px 50px;
 }
 
+
+.graphDiv {
+  position: relative;
+  background-color:beige;
+  padding-top:5px;
+  display: block;
+  margin: 5px 300px 5px 300px;
+  padding: 10px 50px 10px 50px;
+}
+
 .showMeButton {
   position: relative;
   border-radius: 5;
