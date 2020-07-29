@@ -1,15 +1,13 @@
+html {
+  font-family: Arial;
+}
+
 h1 {
   color: MidnightBlue;
   text-align: center;
-  opacity: 50%;
-  margin-top: 200px;
+  opacity: 80%;
+  margin-top: 50px;
 
-}
-
-h4 {
-  color: white;
-  text-align: center;
-  opacity: 50%;
 }
 
 h2 {
@@ -18,10 +16,75 @@ h2 {
   opacity: 50%;
 }
 
+h4 {
+  color: black;
+  text-align: center;
+  opacity: 50%;
+}
+
+
 body {
-  background-image: url('./images/clouds_background.jpg');
+  background-image: url('./images/dogField.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  font-family: Arial;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  padding: 10px 0px;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: center;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #red;
+  color: black;
+}
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #MidnightBlue;
+  color: white;
+  opacity: 70%;
+}
+.active {
+  background-color: MidnightBlue;
+  color: white;
+}
+
+.titleBox {
+  position: relative;
+  background-color:beige;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.introBox {
+  position: relative;
+  background-color:beige;
+  padding-top:5px;
+  display: block;
+  margin: 5px 300px 5px 300px;
+  padding: 10px 50px 10px 50px;
+}
+
+.showMeButton {
+  position: relative;
+  border-radius: 5;
+  color: black;
+  display: block;
+  margin: 0 auto;
+}
+.showMeButton:hover {
+  background: red;
+  border-radius: 5;
 }
