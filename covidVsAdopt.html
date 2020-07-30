@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+<meta charset="utf-8">
   <!-- Header -->
   <head>
     <title>Pandemic Pets</title>
@@ -8,7 +9,7 @@
 
   <!-- Body-->
   <!-- must wrap javascript function in async function init() { } -->
-  <body onload="init()">
+  <body>
 
   <!-- Navigation -->
     <div class="topnav">
@@ -25,16 +26,14 @@
 
 
   <!-- D3 SVG GRAPHING MAGIC -->
-    <div class = "graphDiv">
-      <script src='https://d3js.org/d3.v5.min.js'></script>
-      <style> circle {fill: lightblue; stroke: black;} </style>
-      <svg width=300 height=300></svg>
-      <script type="text/javascript" src="graphs/testingGraph.js"></script>
-    </div>
+
+  <!-- Load d3.js -->
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <!-- Create a div where the graph will take place -->
+  <div id="my_dataviz" class = "graphDiv"></div>
+  <script type="text/javascript" src="graphs/animalShelterGraph.js"></script>
 
   <!-- END OF D3 SVG GRAPHING MAGIC -->
-
-
 
   </body>
 </html>
