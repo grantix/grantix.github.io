@@ -8,12 +8,13 @@
 
   <!-- Body-->
   <!-- must wrap javascript function in async function init() { } -->
-  <body onload="init()">
+  <body>
 
   <!-- Navigation -->
     <div class="topnav">
       <nav>
         <a href="index.html">Title</a>
+        <a href="coronavirus.html">Coronavirus</a>
         <a href="covidVsAdopt.html">Adoptions</a>
         <a class = "active" href="kittensPuppies.html">Dogs Vs. Cats</a>
         <a href="economics.html">Pet Economics</a>
@@ -25,12 +26,16 @@
 
 
   <!-- D3 SVG GRAPHING MAGIC -->
-    <div class = "graphDiv">
-      <script src='https://d3js.org/d3.v5.min.js'></script>
-      <style> circle {fill: lightblue; stroke: black;} </style>
-      <svg width=300 height=300></svg>
-      <script type="text/javascript" src="graphs/testingGraph.js"></script>
-    </div>
+
+  <script src="https://d3js.org/d3.v4.js"></script>
+
+  <!-- Add 2 buttons -->
+  <button onclick="update(data1)">Cats</button>
+  <button onclick="update(data2)">Dogs</button>
+
+  <!-- Create a div where the graph will take place -->
+  <div id="my_dataviz_kittensPuppies" class = "graphDiv"></div>
+  <script type="text/javascript" src="graphs/kittensPuppies.js"></script>
 
   <!-- END OF D3 SVG GRAPHING MAGIC -->
 
