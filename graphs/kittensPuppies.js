@@ -386,7 +386,7 @@ var data2 = [
 ];
 
 // set the dimensions and margins of the graph
-var margin = {top: 10, right: 30, bottom: 40, left: 50},
+var margin = {top: 25, right: 30, bottom: 60, left: 50},
     width = 460 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
 
@@ -453,6 +453,15 @@ svg.append("text")
   .attr("dy", "1em")
   .style("text-anchor", "middle")
   .text("Avg. % Searches for 'Cats' or 'Dogs'");
+
+
+  //Graph Title
+  svg.append("text")
+    .attr("transform",
+        "translate(" + (width/2) + " ," + (2) + ")")
+    .style("text-anchor", "middle")
+    .style("font-size", "1.2em")
+    .text("2020 Google Searches for 'Cats' or 'Dogs'");
 
 
 // Create a function that takes a dataset as input and update the plot:

@@ -1,5 +1,5 @@
 // set the dimensions and margins of the graph
-var margin = {top: 10, right: 30, bottom: 40, left: 80},
+var margin = {top: 15, right: 30, bottom: 40, left: 80},
     width = 460 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
 
@@ -50,6 +50,15 @@ d3.csv("https://raw.githubusercontent.com/grantix/grantix.github.io/master/datas
       .attr("dy", "1em")
       .style("text-anchor", "middle")
       .text("U.S. COVID-19 Cases");
+
+
+      //Graph Title
+      svg.append("text")
+        .attr("transform",
+            "translate(" + (width/2) + " ," + (2) + ")")
+        .style("text-anchor", "middle")
+        .style("font-size", "1.2em")
+        .text("2020 COVID-19 Cases in the US");
 
       // Set the gradient
       const max = d3.max(data, function(d) { return +d.cases; })

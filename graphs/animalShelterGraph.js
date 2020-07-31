@@ -1,5 +1,5 @@
 // set the dimensions and margins of the graph
-var margin = {top: 10, right: 50, bottom: 40, left: 60},
+var margin = {top: 18, right: 50, bottom: 45, left: 60},
     width = 460 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
 
@@ -67,6 +67,15 @@ d3.csv("https://raw.githubusercontent.com/grantix/grantix.github.io/master/datas
       .attr("dy", "1em")
       .style("text-anchor", "middle")
       .text("Avg. % Searches for Animal Shelters");
+
+
+      //Graph Title
+      svg.append("text")
+        .attr("transform",
+            "translate(" + (width/2) + " ," + (2) + ")")
+        .style("text-anchor", "middle")
+        .style("font-size", "1.2em")
+        .text("2020 Searches for 'Animal Shelters'");
 
     // Add the line
     svg.append("path")

@@ -87,6 +87,15 @@ body {
   padding: 10px 50px 10px 50px;
 }
 
+.economicsGraphDiv {
+  position: absolute;
+  background-color:beige;
+  display: block;
+  margin-left: 25%;
+  margin-right: auto;
+  padding: 10px 50px 10px 50px;
+}
+
 .showMeButton {
   position: relative;
   border-radius: 5;
