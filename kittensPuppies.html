@@ -30,9 +30,10 @@
   <script src="https://d3js.org/d3.v4.js"></script>
 
   <!-- Add 2 buttons -->
-  <button onclick="update(data1)">Cats</button>
-  <button onclick="update(data2)">Dogs</button>
-
+  <div class = "wrapper">
+    <button onclick="update(data1)" class="catsDogsButton">Cats</button>
+    <button onclick="update(data2)" class="catsDogsButton">Dogs</button>
+  </div>
   <!-- Create a div where the graph will take place -->
   <div id="my_dataviz_kittensPuppies" class = "graphDiv"></div>
   <script type="text/javascript" src="graphs/kittensPuppies.js"></script>

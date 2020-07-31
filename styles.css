@@ -79,11 +79,11 @@ body {
 
 
 .graphDiv {
-  position: relative;
+  position: absolute;
   background-color:beige;
-  padding-top:5px;
   display: block;
-  margin: 5px 300px 5px 300px;
+  margin-left: 30%;
+  margin-right: auto;
   padding: 10px 50px 10px 50px;
 }
 
@@ -94,6 +94,21 @@ body {
   display: block;
   margin: 0 auto;
 }
+
+.wrapper {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  left: 45%;
+}
+
+.catsDogsButton {
+  text-align: center;
+  position: relative;
+  color: black;
+  padding: 10px;
+}
+
 .showMeButton:hover {
   background: red;
   border-radius: 5;

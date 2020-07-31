@@ -1,5 +1,5 @@
 // set the dimensions and margins of the graph
-var margin = {top: 10, right: 30, bottom: 40, left: 60},
+var margin = {top: 10, right: 50, bottom: 40, left: 60},
     width = 460 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
 
@@ -35,6 +35,23 @@ d3.csv("https://raw.githubusercontent.com/grantix/grantix.github.io/master/datas
             "translate(" + (width/2) + " ," + (height + margin.top + 25) + ")")
       .style("text-anchor", "middle")
       .text("Date");
+    // Add red trend line on top of graph
+    svg.append("line")
+      .style("stroke", "red")
+      .style("stroke-width", 2)
+      .attr("x1", 0)
+      .attr("y1", 180)
+      .attr("x2", 400)
+      .attr("y2", 130);
+    //Label Trend line
+    svg.append("text")
+      .attr("transform",
+            "translate(" + (width + 25) + " ," + ((height/2) - 50) + ")")
+      .style("text-anchor", "middle")
+      .style("stroke", "red")
+      .text("+10%");
+
+
 
     // Add Y axis
     var y = d3.scaleLinear()
@@ -49,7 +66,7 @@ d3.csv("https://raw.githubusercontent.com/grantix/grantix.github.io/master/datas
       .attr("x",0 - (height / 2))
       .attr("dy", "1em")
       .style("text-anchor", "middle")
-      .text("Avg. Searches for Animal Shelters");
+      .text("Avg. % Searches for Animal Shelters");
 
     // Add the line
     svg.append("path")

@@ -386,7 +386,7 @@ var data2 = [
 ];
 
 // set the dimensions and margins of the graph
-var margin = {top: 10, right: 30, bottom: 30, left: 50},
+var margin = {top: 10, right: 30, bottom: 40, left: 50},
     width = 460 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
 
@@ -404,13 +404,56 @@ var x = d3.scaleLinear().range([0,width]);
 var xAxis = d3.axisBottom().scale(x);
 svg.append("g")
   .attr("transform", "translate(0," + height + ")")
-  .attr("class","myXaxis")
+  .attr("class","myXaxis");
+
+svg.append("text")
+  .attr("transform",
+        "translate(" + (width/2) + " ," + (height + margin.top + 25) + ")")
+  .style("text-anchor", "middle")
+  .text("Days of COVID-19 Press");
+
+
+  // Add red trend line on top of graph
+svg.append("line")
+  .style("stroke", "black")
+  .style("stroke-width", 2)
+  .style("stroke-dasharray", "5,5")
+  .attr("x1", 120)
+  .attr("y1", 30)
+  .attr("x2", 120)
+  .attr("y2", 350);
+//Label Trend line
+svg.append("text")
+  .attr("transform",
+        "translate(" + (150) + " ," + (280) + ")")
+  .style("text-anchor", "middle")
+  .style("stroke", "Black")
+  .style("font-size", ".8em")
+  .text("(One week after COVID-19 shutdowns began)");
+
+svg.append("text")
+  .attr("transform",
+        "translate(" + (150) + " ," + (260) + ")")
+  .style("text-anchor", "middle")
+  .style("stroke", "Black")
+  .style("font-size", ".8em")
+  .text("March 22");
+
 
 // Initialize an Y axis
 var y = d3.scaleLinear().range([height, 0]);
 var yAxis = d3.axisLeft().scale(y);
 svg.append("g")
   .attr("class","myYaxis")
+
+svg.append("text")
+  .attr("transform", "rotate(-90)")
+  .attr("y", 0 - margin.left)
+  .attr("x",0 - (height / 2))
+  .attr("dy", "1em")
+  .style("text-anchor", "middle")
+  .text("Avg. % Searches for 'Cats' or 'Dogs'");
+
 
 // Create a function that takes a dataset as input and update the plot:
 function update(data) {
