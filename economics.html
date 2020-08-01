@@ -7,9 +7,7 @@
   </head>
 
   <!-- Body-->
-  <!-- must wrap javascript function in async function init() { } -->
   <body>
-
   <!-- Navigation -->
     <div class="topnav">
       <nav>
@@ -22,20 +20,48 @@
     </div>
 
 
-    <h1> Page transferred successfully 3</h1>
+    <div class="titleBox">
+      <h1>  Chewy.com </h1>
+    </div>
 
+    <div class="introBox">
+      <p>Chewy.com is one of the world's leading pet supply delivery companies.  Acquired in 2017 by PetSmart for
+        $3.35 billion, it was valuable long before the Pandemic.  Since March, however, Chewy's valuation has
+        soared over $20 billion!
+      </p>
+      <p> Hover your mouse over the graph to see more details! </p>
+    </div>
 
   <!-- D3 SVG GRAPHING MAGIC -->
 
   <!-- Load d3.js -->
   <script src="https://d3js.org/d3.v4.js"></script>
   <!-- Create a div where the graph will take place -->
-  <div id="my_dataviz_economics" class = "economicsGraphDiv"></div>
-  <script type="text/javascript" src="graphs/economics.js"></script>
-
+  <div class="graphSurround">
+    <div id="my_dataviz_economics" class = "economicsGraphDiv">
+      <script type="text/javascript" src="graphs/economics.js"></script>
+    </div>
+  </div>
   <!-- END OF D3 SVG GRAPHING MAGIC -->
 
+  <div class="introBox">
+    <p>It is no coincidence that Chewy began gaining value in the pandemic.  No one spends more on their pets
+      than new pet owners!  Buying doggie beds, litter boxes, food and toys from an online purveyor boosts their
+      company earnings enough to nearly double their valuation.
+    </p>
+    <p> Since the rise of COVID-19 and the mass movement towards working from home, searches for Animal Shelters and
+      specific pets have risen along with the market economy for delivered pet supplies.  My hypothesis of increased interest in
+      pet adoptions and companionship during this year's pandemic is correct!
+    </p>
+    <p> 2020 may have been a year of trials and tribulations for many of us, but in the eyes of the recently adopted Pandemic Pets,
+      it was the best year ever.
+    </p>
 
+    <div id="buttonContainer">
+    <button class="showMeButton" onclick="location.href='kittensPuppies.html'"> <-Back </button>
+    <button class="showMeButton" onclick="location.href='bonus.html'">Bonus -></button>
+    </div>
+  </div>
 
   </body>
 </html>

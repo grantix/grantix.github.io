@@ -8,7 +8,6 @@
   </head>
 
   <!-- Body-->
-  <!-- must wrap javascript function in async function init() { } -->
   <body>
 
   <!-- Navigation -->
@@ -22,22 +21,47 @@
       </nav>
     </div>
 
+    <div class="titleBox">
+      <h1> Coronavirus in the U.S. </h1>
+    </div>
 
-    <h1> Page transferred successfully 00</h1>
+    <div class="introBox">
+      <p>A novel coronavirus is a new coronavirus that has not been previously identified.
+        The virus causing coronavirus disease 2019 (COVID-19), is not the same as the coronaviruses
+         that commonly circulate among humans and cause mild illness, like the common cold.
+      </p>
+    </div>
 
+    <!-- D3 SVG GRAPHING MAGIC -->
 
-  <!-- D3 SVG GRAPHING MAGIC -->
+    <!-- Load d3.js -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <!-- Create a div where the graph will take place -->
+    <div class="graphSurround">
+      <div id="my_dataviz_coronavirus" class = "graphDiv">
+          <script type="text/javascript" src="graphs/coronavirus.js"></script>
+      </div>
+    </div>
+    <!-- END OF D3 SVG GRAPHING MAGIC -->
 
-  <!-- Load d3.js -->
-  <script src="https://d3js.org/d3.v4.js"></script>
-  <!-- Create a div where the graph will take place -->
-  <div id="my_dataviz_coronavirus" class = "graphDiv"></div>
-  <script type="text/javascript" src="graphs/coronavirus.js"></script>
-
-
-
-
-  <!-- END OF D3 SVG GRAPHING MAGIC -->
+    <div class="introBox">
+      <p>  One of the most popular subjects of the year 2020 has been this exponentially growing
+        disease.  The graph above is no surprise to many, with U.S. cases breaking the 4,000,000 mark
+        by the end of July 2020.
+      </p>
+      <p>  In March 2020 many U.S. companies shifted their employees to a work-from-home environment.
+        This unprecendented quarantine left many individuals with a lack of companionship.
+      </p>
+      <p> With the help of data from
+        <a href="https://trends.google.com/trends/?geo=US">Google Trends</a>,
+         <a href="https://github.com/nytimes/covid-19-data">NY Times</a>, and
+         <a href="https://finance.yahoo.com/quote/CHWY/history/">NYSE(CHWY)</a>,we can piece together
+         whether Americans are replacing their coworkers with Pandemic Pets!
+      </p>
+      <div id="buttonContainer">
+      <button class="showMeButton" onclick="location.href='covidVsAdopt.html'">Next -></button>
+      </div>
+    </div>
 
   </body>
 </html>

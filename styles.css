@@ -2,6 +2,11 @@ html {
   font-family: Arial;
 }
 
+p {
+  font-family: Arial;
+  display: block;
+}
+
 h1 {
   color: MidnightBlue;
   text-align: center;
@@ -14,6 +19,12 @@ h2 {
   color: Black;
   text-align: center;
   opacity: 50%;
+}
+h3 {
+  color: MidnightBlue;
+  text-align: center;
+  opacity: 80%;
+  margin-top: 10px;
 }
 
 h4 {
@@ -63,36 +74,50 @@ body {
 
 .titleBox {
   position: relative;
+  display: block;
   background-color:beige;
-  margin-left: 300px;
-  margin-right: 300px;
+  margin: 0 20%;
+  min-width: 600px;
+
 }
 
 .introBox {
   position: relative;
   background-color:beige;
-  padding-top:5px;
   display: block;
-  margin: 5px 300px 5px 300px;
-  padding: 10px 50px 10px 50px;
+  margin: 20px 20%;
+  padding: 10px 50px 5px 50px;
+  min-width: 600px;
+
 }
 
 
+.graphSurround {
+  position: relative;
+  background-color: Tan;
+  margin: 20px 20%;
+  padding: 5px;
+  min-width: 600px;
+
+}
+
 .graphDiv {
-  position: absolute;
+  position: center;
   background-color:beige;
   display: block;
-  margin-left: 30%;
-  margin-right: auto;
+  min-width: 450px;
+  max-width: 450px;
+  margin: auto;
   padding: 10px 50px 10px 50px;
 }
 
 .economicsGraphDiv {
-  position: absolute;
+  position: center;
   background-color:beige;
   display: block;
-  margin-left: 25%;
-  margin-right: auto;
+  min-width: 600px;
+  max-width: 600px;
+  margin: auto;
   padding: 10px 50px 10px 50px;
 }
 
@@ -100,16 +125,16 @@ body {
   position: relative;
   border-radius: 5;
   color: black;
-  display: block;
-  margin: 0 auto;
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: middle;
+  h
 }
 
-.wrapper {
+#buttonContainer {
   text-align: center;
-  display: inline-block;
-  position: relative;
-  left: 45%;
 }
+
 
 .catsDogsButton {
   text-align: center;
@@ -121,4 +146,15 @@ body {
 .showMeButton:hover {
   background: red;
   border-radius: 5;
+}
+
+.photoBox {
+  position: center;
+  background-color:beige;
+  display: block;
+  min-width: 450px;
+  max-width: 450px;
+  margin: auto;
+
+
 }

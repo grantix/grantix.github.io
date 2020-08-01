@@ -7,7 +7,6 @@
   </head>
 
   <!-- Body-->
-  <!-- must wrap javascript function in async function init() { } -->
   <body>
 
   <!-- Navigation -->
@@ -22,24 +21,55 @@
     </div>
 
 
-    <h1> Page transferred successfully 2</h1>
+    <div class="titleBox">
+      <h1> Are you a cat person or a dog person? </h1>
+    </div>
 
+    <div class="introBox">
+      <p>Instead of jumping right to animal shelters, maybe the first step in finding a Pandemic Pet is
+        choosing a species or a breed.  The graph below can be toggled with buttons between the search trends for
+        'Cats' or 'Dogs'.
+      </p>
+      <p> Try it out for yourself!</p>
+    </div>
 
   <!-- D3 SVG GRAPHING MAGIC -->
 
   <script src="https://d3js.org/d3.v4.js"></script>
-
-  <!-- Add 2 buttons -->
-  <div class = "wrapper">
-    <button onclick="update(data1)" class="catsDogsButton">Cats</button>
-    <button onclick="update(data2)" class="catsDogsButton">Dogs</button>
-  </div>
+  <div class="graphSurround">
+    <!-- Add 2 buttons -->
+    <div id="buttonContainer">
+      <button onclick="update(data1)" class="catsDogsButton">Cats</button>
+      <button onclick="update(data2)" class="catsDogsButton">Dogs</button>
+    </div>
   <!-- Create a div where the graph will take place -->
-  <div id="my_dataviz_kittensPuppies" class = "graphDiv"></div>
-  <script type="text/javascript" src="graphs/kittensPuppies.js"></script>
-
+    <div id="my_dataviz_kittensPuppies" class = "graphDiv">
+      <script type="text/javascript" src="graphs/kittensPuppies.js"></script>
+    </div>
+  </div>
   <!-- END OF D3 SVG GRAPHING MAGIC -->
 
+  <div class="introBox">
+    <p>The most interesting observation from this data is that searches for both cats and dogs
+      spiked around March 22.  This was one week after most U.S. companies decided to go remote!
+    </p>
+    <p>As most U.S. companies are still working-from-home, the search trend remains significatly
+      elevated.  And sorry to all the canine lovers out there...cats are searched for about 10% more than dogs are this year.
+      </p>
+  </div>
+
+  <div class="introBox">
+    <p>Regardless of the search terms and popularity contests, bringing a pet into your family is a big decision... and
+      it costs money!
+    </p>
+    <p> Speaking of financials, would an increased interest in Pandemic Pets have any noticeable economic impact?
+    </p>
+
+    <div id="buttonContainer">
+    <button class="showMeButton" onclick="location.href='covidVsAdopt.html'"> <-Back </button>
+    <button class="showMeButton" onclick="location.href='economics.html'">Next -></button>
+    </div>
+  </div>
 
 
   </body>

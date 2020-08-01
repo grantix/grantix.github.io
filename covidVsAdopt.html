@@ -8,7 +8,6 @@
   </head>
 
   <!-- Body-->
-  <!-- must wrap javascript function in async function init() { } -->
   <body>
 
   <!-- Navigation -->
@@ -22,22 +21,49 @@
       </nav>
     </div>
 
+    <div class="titleBox">
+      <h1> Looking to adopt? </h1>
+    </div>
 
-    <h1> Page transferred successfully 1</h1>
+    <div class="introBox">
+      <p>The first thing most people do when considering a pet is turn to the nearest search
+        engine...Thankfully Google publishes trends for all search terms and enables us to
+        filter by geographic areas.
+      </p>
+    </div>
 
 
   <!-- D3 SVG GRAPHING MAGIC -->
 
   <!-- Load d3.js -->
-  <script src="https://d3js.org/d3.v4.js"></script>
+
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <div class="graphSurround">
   <!-- Create a div where the graph will take place -->
-  <div id="my_dataviz_animalshelters" class = "graphDiv"></div>
-  <script type="text/javascript" src="graphs/animalShelterGraph.js"></script>
-
-
-
+      <div id="my_dataviz_animalshelters" class = "graphDiv">
+        <script type="text/javascript" src="graphs/animalShelterGraph.js"></script>
+      </div>
+    </div>
 
   <!-- END OF D3 SVG GRAPHING MAGIC -->
+
+    <div class="introBox">
+      <p>From this data we can observe that over the last 8 months there has been a 10% increase
+        in individuals searching for nearby Animal Shelters!
+      </p>
+      <p>Curiously though, the increase is not exponential like the rise in COVID-19 cases in the U.S.
+        that we saw in the last graph. Maybe people aren't interested in adopting from a shelter
+        and would rather buy from a breeder.
+      </p>
+
+      <p>This graph alone can't prove a true correlation between new pets and the pandemic, but maybe
+        if we dive down deeper...
+      </p>
+      <div id="buttonContainer">
+      <button class="showMeButton" onclick="location.href='coronavirus.html'"> <-Back </button>
+      <button class="showMeButton" onclick="location.href='kittensPuppies.html'">Next -></button>
+      </div>
+    </div>
 
   </body>
 </html>
